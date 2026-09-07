@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>将棋Arena プライバシーポリシー</title>
+<meta name="description" content="将棋Arena が取得する情報とその取り扱いについて。">
+<style>
+  :root {
+    --paper: #F7F1E4; --surface: #FFFBF2; --ink: #1F150C; --ink-soft: #6B5C4A;
+    --walnut: #6B4423; --gold: #A97F35; --rule: #DDD0BA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#16110C; --surface:#1E1811; --ink:#EFE6D6; --ink-soft:#A7997F;
+            --walnut:#D8B183; --gold:#D2A85E; --rule:#34291D; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); line-height:1.85;
+         font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:56px 24px 80px; }
+  h1 { font-size:25px; margin:0 0 4px; letter-spacing:.02em; }
+  .updated { color:var(--ink-soft); font-size:13px; margin:0 0 36px; }
+  h2 { font-size:17px; margin:34px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--rule); }
+  h3 { font-size:15px; margin:20px 0 4px; }
+  p { margin:0 0 12px; }
+  a { color:var(--walnut); word-break:break-all; }
+  ul { padding-left:1.2em; }
+  li { margin-bottom:6px; }
+  li::marker { color:var(--gold); }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin:8px 0 4px; }
+  th { text-align:left; font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+       color:var(--ink-soft); font-weight:500; padding:0 10px 8px 0; border-bottom:1px solid var(--rule); }
+  td { padding:9px 10px 9px 0; border-bottom:1px solid var(--rule); vertical-align:top; }
+  .scroll { overflow-x:auto; }
+  .en { margin-top:56px; padding-top:36px; border-top:2px solid var(--rule); }
+  footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--rule);
+           color:var(--ink-soft); font-size:13px; display:flex; gap:18px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>将棋Arena プライバシーポリシー</h1>
+  <p class="updated">最終更新日：2026年9月7日</p>
+
+  <p>将棋Arena（以下「本アプリ」）は、利用者のプライバシーを尊重します。本ポリシーは、本アプリが取得する情報とその取り扱いについて説明します。</p>
+
+  <h2>1. 取得する情報</h2>
+
+  <h3>アカウント識別子</h3>
+  <p>本アプリは、起動時に Firebase Authentication の匿名アカウントを作成します。この識別子は、対局・フレンド・戦績を利用者に結びつけるためだけに使用します。氏名、メールアドレス、電話番号は取得しません。Apple ID と連携した場合も、Apple から提供される識別子のみを用い、メールアドレスは保存しません。</p>
+
+  <h3>利用者が入力した情報</h3>
+  <p>表示名、アイコン、フレンド関係、対局の棋譜。表示名とアイコンは、対戦相手および対局を観戦している方に表示されます。本名を設定しないことをおすすめします。</p>
+
+  <h3>広告に関する情報</h3>
+  <p>本アプリは Google AdMob による広告を表示します。AdMob は広告の配信と効果測定のために、広告識別子（IDFA）、おおよその位置情報、アプリの利用状況などを取得する場合があります。詳細は Google のポリシーをご確認ください。<br>
+  <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>取得する情報</th><th>利用目的</th></tr></thead>
+    <tbody>
+      <tr><td>アカウント識別子</td><td>対局のマッチング、フレンド機能、戦績の記録</td></tr>
+      <tr><td>表示名・アイコン</td><td>対戦相手・観戦者への表示</td></tr>
+      <tr><td>棋譜</td><td>対局の進行と再開</td></tr>
+      <tr><td>広告識別子・利用状況</td><td>広告の表示と効果測定（Google AdMob）</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>2. 情報の利用目的</h2>
+  <p>取得した情報は、対局のマッチングと進行、フレンド機能、戦績の記録、不適切な利用の防止、および広告の表示のために利用します。これ以外の目的では利用しません。</p>
+
+  <h2>3. 第三者への提供</h2>
+  <p>本アプリは以下のサービスを利用しています。</p>
+  <ul>
+    <li>Google Firebase（認証・データベース）</li>
+    <li>Google AdMob（広告配信）</li>
+  </ul>
+  <p>上記の目的以外で、利用者の情報を第三者に販売または提供することはありません。法令に基づく開示請求があった場合を除きます。</p>
+
+  <h2>4. トラッキングについて</h2>
+  <p>本アプリは、パーソナライズされた広告のために広告識別子を利用することがあります。iOS の App Tracking Transparency による許可を求め、許可されなかった場合はパーソナライズされていない広告を表示します。許可の有無にかかわらず、本アプリのすべての機能をご利用いただけます。</p>
+
+  <h2>5. データの削除</h2>
+  <p>アプリ内の「プロフィール」タブ最下部にある「アカウントとデータを削除」から、いつでもご自身のアカウントと関連データを削除できます。削除したデータは復元できません。</p>
+
+  <h2>6. 児童のプライバシー</h2>
+  <p>本アプリは13歳未満の児童から意図的に個人情報を取得することはありません。13歳未満の方の情報を取得したことが判明した場合は、速やかに削除します。</p>
+
+  <h2>7. 本ポリシーの変更</h2>
+  <p>本ポリシーを変更する場合は、本ページで告知します。重要な変更を行う場合は、アプリ内でもお知らせします。</p>
+
+  <h2>8. お問い合わせ</h2>
+  <p><a href="mailto:kei20011126@gmail.com">kei20011126@gmail.com</a></p>
+
+  <div class="en" lang="en">
+    <h1>Shogi Arena Privacy Policy</h1>
+    <p class="updated">Last updated: September 7, 2026</p>
+
+    <p>Shogi Arena (the "App") respects your privacy. This policy explains what information the App collects and how it is used.</p>
+
+    <h2>1. Information we collect</h2>
+    <p><strong>Account identifier.</strong> The App creates an anonymous Firebase Authentication account on launch. This identifier is used only to associate games, friends and records with you. We do not collect your name, email address or phone number. If you link an Apple ID, we store only the identifier provided by Apple.</p>
+    <p><strong>Information you provide.</strong> Display name, icon, friend relationships and game records. Your display name and icon are visible to your opponent and to anyone spectating your game.</p>
+    <p><strong>Advertising information.</strong> The App displays ads through Google AdMob, which may collect the advertising identifier (IDFA), approximate location and app usage for ad delivery and measurement. See <a href="https://policies.google.com/technologies/ads">Google's advertising policy</a>.</p>
+
+    <h2>2. How we use it</h2>
+    <p>To match and run games, provide friend features, record results, prevent abuse, and display ads. We do not use it for any other purpose.</p>
+
+    <h2>3. Third parties</h2>
+    <p>We use Google Firebase (authentication and database) and Google AdMob (advertising). We never sell or share your information with other third parties, except where required by law.</p>
+
+    <h2>4. Tracking</h2>
+    <p>The App may use the advertising identifier for personalized ads. It requests permission through App Tracking Transparency; if you decline, you will see non-personalized ads. All features of the App remain available either way.</p>
+
+    <h2>5. Deleting your data</h2>
+    <p>You can delete your account and all associated data at any time from the bottom of the Profile tab ("アカウントとデータを削除"). Deleted data cannot be recovered.</p>
+
+    <h2>6. Children's privacy</h2>
+    <p>The App does not knowingly collect personal information from children under 13. If we learn that we have, we will delete it promptly.</p>
+
+    <h2>7. Changes</h2>
+    <p>Any changes to this policy will be posted on this page.</p>
+
+    <h2>8. Contact</h2>
+    <p><a href="mailto:kei20011126@gmail.com">kei20011126@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <a href="index.html">サポート</a>
+    <span>© 2026 Kei Suzumura</span>
+  </footer>
+
+</div>
+</body>
+</html>

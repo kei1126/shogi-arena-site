@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>将棋Arena サポート</title>
+<meta name="description" content="将棋Arena のサポートページ。よくある質問とお問い合わせ先。">
+<style>
+  :root {
+    --paper: #F7F1E4; --surface: #FFFBF2; --ink: #1F150C; --ink-soft: #6B5C4A;
+    --walnut: #6B4423; --gold: #A97F35; --rule: #DDD0BA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper:#16110C; --surface:#1E1811; --ink:#EFE6D6; --ink-soft:#A7997F;
+            --walnut:#D8B183; --gold:#D2A85E; --rule:#34291D; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); line-height:1.8;
+         font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:56px 24px 80px; }
+  header { display:flex; align-items:center; gap:16px; margin-bottom:8px; }
+  .mark { width:56px; height:56px; flex:none; border-radius:13px;
+          background:linear-gradient(180deg,#7E5430,#341D0C);
+          display:flex; align-items:center; justify-content:center; }
+  .mark span { display:block; width:30px; height:34px; background:linear-gradient(180deg,#FFFAEA,#E7C694);
+               clip-path:polygon(50% 0,88% 17%,98% 100%,2% 100%,12% 17%);
+               color:#16100A; font:700 17px/34px "Hiragino Mincho ProN",serif; text-align:center; }
+  h1 { font-size:26px; margin:0; letter-spacing:.02em; }
+  .lede { color:var(--ink-soft); margin:4px 0 40px; }
+  h2 { font-size:17px; margin:36px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--rule); }
+  h3 { font-size:15px; margin:22px 0 4px; }
+  p { margin:0 0 12px; }
+  a { color:var(--walnut); }
+  ul { padding-left:1.2em; }
+  li::marker { color:var(--gold); }
+  .contact { background:var(--surface); border:1px solid var(--rule); border-left:3px solid var(--gold);
+             border-radius:3px; padding:16px 18px; margin-top:14px; }
+  footer { margin-top:56px; padding-top:18px; border-top:1px solid var(--rule);
+           color:var(--ink-soft); font-size:13px; display:flex; gap:18px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark"><span>王</span></div>
+    <div>
+      <h1>将棋Arena サポート</h1>
+      <p class="lede" style="margin:0">本格ルールで指せる将棋アプリ</p>
+    </div>
+  </header>
+
+  <h2>よくある質問</h2>
+
+  <h3>機種を変えたらデータは引き継げますか？</h3>
+  <p>プロフィールタブから Apple ID と連携しておけば、同じ Apple ID でサインインすることで戦績とフレンドを引き継げます。連携していない場合、データはその端末にのみ保存されているため引き継げません。</p>
+
+  <h3>オンライン対戦で相手が見つかりません</h3>
+  <p>対戦相手を探している人がいないときは、見つかるまで待機状態になります。相手が現れると自動的に対局が始まります。ホーム画面右上に、いまオンラインにいる人数が表示されます。</p>
+
+  <h3>対局中に接続が切れました</h3>
+  <p>指し手はサーバー側に記録されているので、アプリを開き直せば同じ局面から再開できます。</p>
+
+  <h3>フレンドと対局するには</h3>
+  <p>プロフィールタブ → フレンド から、8桁のフレンドコードを相手に伝えてください。相手がそのコードで申請し、あなたが承認するとフレンドになります。フレンド一覧の「対局」ボタンで申し込めます。</p>
+
+  <h3>迷惑な相手を報告したい</h3>
+  <p>対局中および観戦中の画面右上のメニューから、通報とブロックができます。ブロックした相手とは以後マッチングしません。</p>
+
+  <h3>アカウントとデータを削除したい</h3>
+  <p>プロフィールタブの最下部にある「アカウントとデータを削除」から削除できます。プロフィール、戦績、フレンド関係がすべて消え、元に戻すことはできません。</p>
+
+  <h3>広告を消せますか？</h3>
+  <p>現在のバージョンでは広告の非表示に対応していません。広告はホーム画面の下部にのみ表示され、対局中や詰将棋を解いている間は表示されません。</p>
+
+  <h3>ルールの判定が間違っている気がします</h3>
+  <p>成り、二歩、行き所のない駒、打ち歩詰め、千日手、連続王手の千日手まで実装していますが、もし誤りを見つけた場合は、そのときの局面と手順を添えてご連絡ください。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合の報告、ご要望、その他のお問い合わせは下記までお願いします。返信までお時間をいただく場合があります。</p>
+  <div class="contact">
+    <p style="margin:0"><a href="mailto:kei20011126@gmail.com">kei20011126@gmail.com</a></p>
+  </div>
+  <p style="margin-top:14px; font-size:14px; color:var(--ink-soft)">不具合の報告では、お使いの機種名、iOS のバージョン、アプリのバージョン、そのときの操作手順を添えていただけると助かります。</p>
+
+  <footer>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <span>© 2026 Kei Suzumura</span>
+  </footer>
+
+</div>
+</body>
+</html>
